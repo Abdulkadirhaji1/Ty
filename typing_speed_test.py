@@ -3,6 +3,7 @@ from curses import wrapper
 import time
 import random
 
+
 def start_screen(stdscr):
     stdscr.clear()
     stdscr.addstr("Welcome to the Speed Typing Test!")
@@ -58,7 +59,6 @@ def wpm_test(stdscr):
         
         elif len(current_text) < len(target_text):
             current_text.append(key)
-
 
 def main(stdscr):
     curses.init_pair(1, curses.COLOR_GREEN, curses.COLOR_BLACK)
